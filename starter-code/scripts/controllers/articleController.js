@@ -20,9 +20,11 @@
     Article.findWhere('id', ctx.params.id, articleData);
   };
 
-  // COMMENT: What does this method do?  What is it's execution path?
+  // COMMENT: Done! What does this method do?  What is it's execution path?
   //This method loads by the Author
-  //The execution path
+  //when we called this function will take all the articles by Author name
+  //then it runs the articleView.index
+
   articlesController.loadByAuthor = function(ctx, next) {
     var authorData = function(articlesByAuthor) {
       ctx.articles = articlesByAuthor;
