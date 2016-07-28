@@ -36,7 +36,7 @@
     );
   };
 
-  // COMMENT: What does this method do?  What is it's execution path?
+  // COMMENT: DONE! What does this method do?  What is it's execution path?
   //This method loads based on category
   //this is called from a page(); call using categoryname as an id
   //this grabs all the articles and then runs the next function which is articlesController.index
@@ -49,7 +49,10 @@
     Article.findWhere('category', ctx.params.categoryName, categoryData);
   };
 
-  // COMMENT: What does this method do?  What is it's execution path?
+  // COMMENT: DONE What does this method do?  What is it's execution path?
+  //This method loads all the articles
+  //this is called from a page(); call using no id, it just pulls all of them.
+  //after grabbing all the articles, it runs the next function which is articlesController.index
   articlesController.loadAll = function(ctx, next) {
     var articleData = function(allArticles) {
       ctx.articles = Article.all;
