@@ -40,6 +40,8 @@
   };
 
   // COMMENT: What does this method do?  What is it's execution path?
+  //this function checks if one of the filters has been changed
+  //this function takes the id of the selected filter item and replaces the page call cxt with that concat-ed at what the call is listening for.
   articleView.handleFilters = function() {
     $('#filters').one('change', 'select', function() {
       var resource = this.id.replace('-filter', '');
