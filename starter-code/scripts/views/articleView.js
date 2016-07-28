@@ -122,6 +122,8 @@
   };
 
   // COMMENT: What does this method do?  What is it's execution path?
+  //This method replaces the previously shown articles with the new articles that you have
+  //This method is called at the end of the page(); call as the "next function"
   articleView.index = function(articles) {
     $('#articles').show().siblings().hide();
 
