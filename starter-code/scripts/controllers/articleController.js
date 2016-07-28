@@ -37,6 +37,9 @@
   };
 
   // COMMENT: What does this method do?  What is it's execution path?
+  //This method loads based on category
+  //this is called from a page(); call using categoryname as an id
+  //this grabs all the articles and then runs the next function which is articlesController.index
   articlesController.loadByCategory = function(ctx, next) {
     var categoryData = function(articlesInCategory) {
       ctx.articles = articlesInCategory;
