@@ -7,8 +7,10 @@
     articleView.index(ctx.articles);
   };
 
-  // COMMENT: What does this method do?  What is it's execution path?
+  // COMMENT: Done! What does this method do?  What is it's execution path?
   // This method loads by the id
+  //called by pageFunction it takes the articles from the page with Id and
+  //run articleView.index
   articlesController.loadById = function(ctx, next) {
     var articleData = function(article) {
       ctx.articles = article;
@@ -19,6 +21,8 @@
   };
 
   // COMMENT: What does this method do?  What is it's execution path?
+  //This method loads by the Author
+  //The execution path
   articlesController.loadByAuthor = function(ctx, next) {
     var authorData = function(articlesByAuthor) {
       ctx.articles = articlesByAuthor;
