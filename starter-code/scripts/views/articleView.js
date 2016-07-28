@@ -12,7 +12,9 @@
     return template(article);
   };
 
-  // COMMENT: What does this method do?  What is it's execution path?
+  // COMMENT: DONE What does this method do?  What is it's execution path?
+  //This populates the template
+  //this is called at the bottom of the page
   articleView.populateFilters = function() {
     var options,
       template = Handlebars.compile($('#option-template').text());
